@@ -1,7 +1,5 @@
+ALTER TABLE musician drop role;
+ALTER TABLE musician drop bandName;
+ALTER TABLE musician CHANGE musicianName singerName  Varchar(50);
 ALTER TABLE musician rename to singer;
-
-ALTER table singer drop COLUMN role;
-
-ALTER table singer drop COLUMN bandName;
-
-drop Table band;
+DROP TABLE if EXISTS band;
